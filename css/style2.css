@@ -1,0 +1,169 @@
+/*  Загальні стилі  */
+body {
+    margin: 0;
+    font-family: 'Inder', sans-serif;
+    background-color: #f3f6fb;
+    color: #2c3e50;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    font-size: 1.2rem;
+}
+
+h2, p {
+    text-indent: 25px; 
+}
+
+/*  Header */
+.header_section {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 50px auto;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+    border-radius: 25px;
+    background: linear-gradient(135deg, #ffffff, #d9e6f2);
+    overflow: hidden;
+}
+
+.header_text {
+    flex: 2;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header_text h1 {
+    margin: 0 0 15px 0;
+    font-size: 3rem;
+    color: #1b3a60; /* глибокий синій */
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.15);
+}
+
+.header_text p {
+    margin: 0;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.header_img, .headerLinux_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_img img {
+    max-width: 220px;
+    height: auto;
+    margin: 20px;
+}
+
+.headerLinux_img img {
+    max-width: 200px;
+    height: auto;
+    margin: 20px;
+}
+
+.btn-home {
+    display: inline-block;
+    margin-left: 10%;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.btn-home:hover {
+    background: linear-gradient(135deg, #e76c4c, #ffb77a);
+    transform: translateY(-2px);
+}
+
+/*  Content  */
+.content_section {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 35px 25px;
+    background-color: #ffffff;
+    border-radius: 25px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.content_section h2 {
+    font-size: 2rem;
+    color: #1b3a60;
+    margin-bottom: 15px;
+}
+
+.content_section p {
+    font-size: 1.15rem;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.git_commands {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.command {
+    background-color: #f7f9fc;
+    padding: 8px 10px;
+    border-radius: 15px;
+    font-family: 'Courier New', monospace;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.command:hover {
+    transform: translateY(-3px);
+    background-color: #e1ecf7;
+}
+
+.command .cmd {
+    font-weight: bold;
+    color: #1b3a60;
+}
+
+.img_command {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-top: 25px;
+}
+
+.img_command img {
+    max-width: 70%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+    margin-bottom: 3%;
+}
+
+.img_command img:hover {
+    transform: scale(1.05);
+}
+
+/*  Footer  */
+footer {
+    text-align: center;
+    padding: 25px 10%;
+    background: linear-gradient(135deg, #1b3a60, #254e9b);
+    color: white;
+    margin-top: 50px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
